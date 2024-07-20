@@ -58,6 +58,10 @@ nav #nav-right div {
     display: flex;
     gap: 4rem;
 }
+
+nav #nav-right i {
+    cursor: pointer;
+}
 nav #nav-right div a{ 
     text-decoration: none;
     color: black;
@@ -104,6 +108,96 @@ nav #nav-right div a:hover{
 #page1 #hero-center #video-container video:hover {
     transform: scale(1.2);
 }
+
+/* HIDDEN MENU CONTAINER STYLES */
+
+/* hidden class  */
+.hidden {
+    display: none;
+}
+#page1 #menu-container {
+    position: absolute;
+    background-color: black;
+    width: 100%;
+    height: 100%;
+    top: 0;
+}
+#menu-container nav {
+    color: white;
+}
+#menu-container nav #nav-right a{
+    color: white;
+}
+#menu-container nav i {
+    /* font-size: 22px; */
+    color: white;
+    cursor: pointer;
+    font-weight: 100;
+}
+
+#menu-container #menu {
+    display: flex;
+    margin-top: 3rem;
+    justify-content: space-between;
+}
+
+#menu-container #menu #menu-left {
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem;
+    height: fit-content;
+    position: relative;
+    top: 21rem;
+    width: 60%;
+}
+#menu-left .menu-l-containers{
+    display: flex;
+    flex-direction: column;
+}
+#menu-left .menu-l-containers p{
+    color: rgb(105, 105, 105);
+    font-size: 12px;
+    font-family: helvatica;
+    margin-bottom: 1rem;
+}
+
+#menu-left .menu-l-containers a{
+    font-family: helvatica;
+    font-size: 14px;
+    padding: 1px 0;
+    margin: 1px 0;
+    text-decoration: none;
+    color: white;
+}
+#menu-left .menu-l-containers a:hover{
+    color: rgb(220, 220, 220);
+}
+
+#menu #menu-right {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    width: 30%;
+    padding-right: 1rem;
+}
+#menu #menu-right a{
+    font-size: 3.5rem;
+    font-family: futura;
+    font-weight: 800;
+    text-decoration: none;
+    color: white;
+    line-height: 1;
+}
+#menu #menu-right a:hover{
+    color: rgb(135, 135, 135);
+}
+
+
+
+
+
+
+
 
 #playhead {
     position: relative;  
